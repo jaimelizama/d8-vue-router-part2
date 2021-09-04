@@ -37,7 +37,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "Post" */ '../views/Post.vue'),
     children: [
       {
-        path: ':Articulo',
+        path: ':articulo',
         name: 'Articulo',
         component: () =>
           import(/* webpackChunkName: "Articulo" */ '../views/Articulo.vue')
