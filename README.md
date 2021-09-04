@@ -1,4 +1,4 @@
-# d8-vue-router-part2
+# v8blog
 
 ## Project setup
 ```
@@ -13,6 +13,11 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
+```
+
+### Run your tests
+```
+npm run test
 ```
 
 ### Lints and fixes files
