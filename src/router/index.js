@@ -46,16 +46,43 @@ const routes = [
   },
   {
     path: '/home',
-    redirect: '/'
+    redirect: { name: 'Root' }
   },
   {
     path: '/inicio',
-    redirect: '/'
+    redirect: { name: 'Root' }
   },
   {
     path: '/portada',
-    redirect: '/'
+    redirect: { name: 'Root' }
   },
+  {
+    path: '/administrador',
+    name: 'Administrador',
+    component: () =>
+      import(
+        /* webpackChunkName: "Administrador" */ '../views/Administrador.vue'
+      ),
+    children: [
+      {
+        path: '/administrador/simple',
+        name: 'AdministradorSimple',
+        component: () =>
+          import(
+            /* webpackChunkName: "AdministradorSimple" */ '../views/AdministradorSimple.vue'
+          )
+      },
+      {
+        path: '/administrador/avanzado',
+        name: 'AdministradorAvanzado',
+        component: () =>
+          import(
+            /* webpackChunkName: "AdministradorAvanzado" */ '../views/AdministradorAvanzado.vue'
+          )
+      }
+    ]
+  },
+
   {
     path: '*',
     component: () =>
