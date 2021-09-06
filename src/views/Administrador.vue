@@ -16,7 +16,7 @@
                 >Administrador Simple |
               </router-link>
               <router-link class="admin-panel" to="/administrador/avanzado"
-                >Administrador Avanzando
+                >Administrador Avanzado
               </router-link>
 
               <router-view> </router-view>

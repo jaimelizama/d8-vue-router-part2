@@ -9,7 +9,8 @@
 
 <script>
 export default {
-  name: 'AdministradorAvanzado'
+  name: 'AdministradorAvanzado',
+  props: ['AdministrardorAvanzado']
 }
 </script>
 

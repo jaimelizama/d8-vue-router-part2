@@ -67,17 +67,19 @@ const routes = [
       {
         path: '/administrador/simple',
         name: 'AdministradorSimple',
+        props: true,
         component: () =>
           import(
-            /* webpackChunkName: "AdministradorSimple" */ '../views/AdministradorSimple.vue'
+            /* webpackChunkName: "AdministradorSimple" */ '../components/AdministradorSimple.vue'
           )
       },
       {
         path: '/administrador/avanzado',
         name: 'AdministradorAvanzado',
+        props: true,
         component: () =>
           import(
-            /* webpackChunkName: "AdministradorAvanzado" */ '../views/AdministradorAvanzado.vue'
+            /* webpackChunkName: "AdministradorAvanzado" */ '../components/AdministradorAvanzado.vue'
           )
       }
     ]
